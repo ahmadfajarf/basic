@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #bebcbc;
+  transition: all 0.5s ease-in-out;
+}
+
+.notification-text p {
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.notification-bar .btn-1 {
+  display: inline-block;
+  background-color: #007bc1;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.policy {
+  text-decoration: none;
+}
+
+section .content {
+  height: 100vh;
+  min-height: 500px;
+  background: url(images/work-desk__dustin-lee.jpg) no-repeat center;
+  background-size: cover;
+  background-color: #004a75;
+  background-blend-mode: overlay;
+}
+
+section .heading {
+  width: 100%;
+  padding-top: 225px;
+  text-align: center;
+  color: #fff;
+}
+
+section .heading h3 {
+  font-size: 36px;
+  color: #fff;
+}
+
+section .heading p {
+  font-size: 18px;
+  color: rgb(230, 225, 225);
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #007bc1;
+  transition: 0.5s;
+}
+
+section .content img {
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+section .grey {
+  padding-bottom: 50px;
+  background-color: #bebcbc;
+}
+
+section .grey h3,
+section .grey p {
+  line-height: 1.5em;
+  color: #111;
+}
+
+.inner-width {
+  width: 100%;
+  margin-top: -10em;
+  padding: 0 40px;
+}
+
+.content-panel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content-panel .panel {
+  width: calc(33% - 20px);
+  text-align: start;
+  margin: 20px 0;
+  padding: 20px 30px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px grey;
+}
+
+.content-panel .panel i {
+  font-size: 30px;
+  float: right;
+  color: grey;
+}
+
+.content-panel .panel h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content-panel .panel p {
+  font-size: 15px;
+}
+
+footer {
+  padding: 30px 40px;
+  background-color: #051050;
+}
+
+footer p {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.newsletter-container {
+  width: 40%;
+  padding: 40px 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #007bc1;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.newsletter-container h2 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.newsletter-container p {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.newsletter-container input[type="radio"] {
+  overflow: hidden;
+}
+
+.newsletter-container input[type="text"] {
+  padding: 5px 10px;
+  width: 70%;
+  margin-right: 5px;
+}
+
+.newsletter-container input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #ff8000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.newsletter-container span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* RESNPONSIVE TABLET */
+@media screen and (max-width: 960px) {
+  .notification-bar {
+    width: 100%;
+  }
+
+  .content-panel .panel {
+    width: calc(100% - 20px);
+  }
+
+  .newsletter-container {
+    width: 100%;
+  }
+
+  .notification-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #bebcbc;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .notification-text p {
+    padding-bottom: 10px;
+    text-align: start;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 480px) {
+  .content-panel .panel{
+    width: calc(100% - 20px);
+  }
+}
